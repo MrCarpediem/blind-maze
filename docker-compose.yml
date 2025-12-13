@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  maze-explorer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: blind-maze-explorer:latest
+    container_name: maze-explorer
+    volumes:
+      - ./runs:/app/runs
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
+    stdin_open: true
+    tty: true
