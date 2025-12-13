@@ -1,0 +1,3272 @@
+[?2004hroot@3bcf88d7e515:/app# asciinema rec --stdin /logs/agent.cast
+[?2004l[0;32masciinema: recording asciicast to /logs/agent.cast[0m
+[0;32masciinema: press <ctrl-d> or type "exit" when you're done[0m
+[?2004hroot@3bcf88d7e515:/app# clear
+[?2004l[H[J[3J[?2004hroot@3bcf88d7e515:/app# bash /oracle/solution.sh; tmux wait -S done
+[?2004lStarting exploration of maze 1
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 1)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > reached exit
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 1 saved to output/1.txt
+Finished exploring maze 1
+Starting exploration of maze 2
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 2)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > reached exit
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 2 saved to output/2.txt
+Finished exploring maze 2
+Starting exploration of maze 3
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 3)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > reached exit
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > reached exit
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move E
+Received: > reached exit
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 3 saved to output/3.txt
+Finished exploring maze 3
+Starting exploration of maze 4
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 4)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > reached exit
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > reached exit
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 4 saved to output/4.txt
+Finished exploring maze 4
+Starting exploration of maze 5
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 5)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > reached exit
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > reached exit
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 5 saved to output/5.txt
+Finished exploring maze 5
+Starting exploration of maze 6
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 6)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > reached exit
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move N
+Received: > reached exit
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 6 saved to output/6.txt
+Finished exploring maze 6
+Starting exploration of maze 7
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 7)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > reached exit
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > reached exit
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > reached exit
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > reached exit
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 7 saved to output/7.txt
+Finished exploring maze 7
+Starting exploration of maze 8
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 8)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > reached exit
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > reached exit
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 8 saved to output/8.txt
+Finished exploring maze 8
+Starting exploration of maze 9
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 9)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > reached exit
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 9 saved to output/9.txt
+Finished exploring maze 9
+Starting exploration of maze 10
+Skipped: Welcome to the Blind Maze Explorer! (Maze ID: 10)
+Skipped: You start at position 'S'. Use 'move N/S/E/W' commands to navigate.
+Skipped: You can also use batch commands like 'move N & E', 'move S & S & W'.
+Skipped: Type 'exit' to quit the game.
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > reached exit
+Sending: move N
+Received: > hit wall
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > moved
+Sending: move E
+Received: > hit wall
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > reached exit
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > moved
+Sending: move S
+Received: > hit wall
+Sending: move W
+Received: > hit wall
+Sending: move E
+Received: > moved
+Sending: move N
+Received: > moved
+Sending: move W
+Received: > moved
+Sending: move W
+Received: > hit wall
+Sending: exit
+Received: > Goodbye!
+Maze map for maze 10 saved to output/10.txt
+Finished exploring maze 10
+[?2004hroot@3bcf88d7e515:/app# [?2004l
+exit
+[0;32masciinema: recording finished[0m
+[0;32masciinema: asciicast saved to /logs/agent.cast[0m
+[?2004hroot@3bcf88d7e515:/app# 

@@ -1,5 +1,4 @@
 import sys
-import os
 import subprocess
 
 DIRS = {
@@ -8,16 +7,16 @@ DIRS = {
     "E": (1, 0),
     "W": (-1, 0),
 }
+
 OPP = {"N": "S", "S": "N", "E": "W", "W": "E"}
 
-class MazeExplorer:
+class Explorer:
     def __init__(self, maze_id):
         self.proc = subprocess.Popen(
-            ["./maze_game.sh", str(maze_id)],
+            ["/app/maze_game.sh", str(maze_id)],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             text=True,
-            bufsize=1,
         )
         self.map = {}
         self.visited = set()
@@ -43,44 +42,43 @@ class MazeExplorer:
             if (nx, ny) in self.visited:
                 continue
 
-            res = self.send(f"move {d}")
-            if res == "hit wall":
+            r = self.send(f"move {d}")
+            if r == "hit wall":
                 self.map[(nx, ny)] = "#"
                 continue
 
-            if res == "reached exit":
+            if r == "reached exit":
                 self.exit = (nx, ny)
 
             self.dfs(nx, ny)
             self.send(f"move {OPP[d]}")
 
     def save(self, maze_id):
-        xs = [x for x, _ in self.map]
-        ys = [y for _, y in self.map]
-        minx, maxx = min(xs)-1, max(xs)+1
-        miny, maxy = min(ys)-1, max(ys)+1
+        for x in range(self.minx - 1, self.maxx + 2):
+            self.map[(x, self.miny - 1)] = "#"
+            self.map[(x, self.maxy + 1)] = "#"
+        for y in range(self.miny - 1, self.maxy + 2):
+            self.map[(self.minx - 1, y)] = "#"
+            self.map[(self.maxx + 1, y)] = "#"
 
-        grid = []
-        for y in range(miny, maxy+1):
-            row = []
-            for x in range(minx, maxx+1):
-                row.append(self.map.get((x, y), "#"))
-            grid.append(row)
+        w = self.maxx - self.minx + 3
+        h = self.maxy - self.miny + 3
+        grid = [["#" for _ in range(w)] for _ in range(h)]
 
-        grid[-miny][-minx] = "S"
+        for (x, y), v in self.map.items():
+            grid[y - self.miny + 1][x - self.minx + 1] = v
+
+        grid[1][1] = "S"
         if self.exit:
             ex, ey = self.exit
-            grid[ey-miny][ex-minx] = "E"
+            grid[ey - self.miny + 1][ex - self.minx + 1] = "E"
 
-        with open(f"output/{maze_id}.txt", "w") as f:
-            for r in grid:
-                f.write("".join(r) + "\n")
-
-def main():
-    maze_id = int(sys.argv[1])
-    m = MazeExplorer(maze_id)
-    m.dfs(0, 0)
-    m.save(maze_id)
+        with open(f"/app/output/{maze_id}.txt", "w") as f:
+            for row in grid:
+                f.write("".join(row) + "\n")
 
 if __name__ == "__main__":
-    main()
+    mid = int(sys.argv[1])
+    e = Explorer(mid)
+    e.dfs(0, 0)
+    e.save(mid)
