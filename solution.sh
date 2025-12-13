@@ -15,7 +15,7 @@ do
   if [ -f "/app/output/${i}.txt" ]; then
     cp "/app/output/${i}.txt" /app/maze_map.txt
     cp "/app/output/${i}.txt" /app/output/maze_map.txt
-    echo "Wrote /app/maze_map.txt and ./output/maze_map.txt (from ${i}.txt)"
+    echo "Final maze_map written from ${i}.txt"
   fi
 done
 
