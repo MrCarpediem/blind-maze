@@ -2,9 +2,8 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY maze ./maze
-COPY scripts ./scripts
+COPY . /app
 
 RUN chmod +x scripts/run.sh
 
-CMD ["./scripts/run.sh"]
+CMD ["sh", "scripts/run.sh"]

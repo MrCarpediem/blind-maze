@@ -3,12 +3,10 @@ set -e
 
 mkdir -p output
 
-python - <<EOF
-from maze.explorer import MazeExplorer
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo "Exploring maze $i"
+  python3 explorer.py $i
+done
 
-explorer = MazeExplorer()
-explorer.explore(0, 0)
-explorer.save_map("/app/output/maze_map.txt")
-EOF
-
-echo "Maze exploration complete."
+echo "All mazes explored successfully."
