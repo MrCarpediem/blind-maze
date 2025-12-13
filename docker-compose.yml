@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  maze-explorer:
+    build: .
+    container_name: blind_maze_explorer
+    volumes:
+      - .:/app
+    tty: true
