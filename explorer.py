@@ -1,7 +1,7 @@
 import sys
 import os
 import subprocess
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple
 
 DIRS = {
     "N": (0, -1),
@@ -21,9 +21,8 @@ OPPOSITE = {
 class MazeExplorer:
     def __init__(self, maze_id: int):
         maze_game = "/app/maze_game.sh"
-
         if not os.path.exists(maze_game):
-            raise RuntimeError("Run this program using `tb run` only.")
+            raise RuntimeError("Run using TerminalBench only")
 
         self.proc = subprocess.Popen(
             [maze_game, str(maze_id)],
@@ -33,15 +32,16 @@ class MazeExplorer:
             bufsize=1,
         )
 
-        self.map: Dict[Tuple[int, int], str] = {}
-        self.visited = set()
+        # (x,y) -> {dir: "#"/" "}
+        self.cells: Dict[Tuple[int, int], Dict[str, str]] = {}
+        self.fully_explored = set()
         self.exit_pos = None
 
         self.min_x = self.max_x = 0
         self.min_y = self.max_y = 0
 
-    def _send(self, command: str) -> str:
-        self.proc.stdin.write(command + "\n")
+    def _send(self, cmd: str) -> str:
+        self.proc.stdin.write(cmd + "\n")
         self.proc.stdin.flush()
         return self.proc.stdout.readline().strip()
 
@@ -52,86 +52,75 @@ class MazeExplorer:
         self.max_y = max(self.max_y, y)
 
     def explore(self, x: int, y: int):
-        self.visited.add((x, y))
-        self.map[(x, y)] = " "
+        if (x, y) not in self.cells:
+            self.cells[(x, y)] = {}
+
         self._update_bounds(x, y)
 
         for d, (dx, dy) in DIRS.items():
+            if d in self.cells[(x, y)]:
+                continue  # already probed
+
             nx, ny = x + dx, y + dy
-
-            if (nx, ny) in self.visited:
-                continue
-
             response = self._send(f"move {d}")
 
             if response == "hit wall":
-                self.map[(nx, ny)] = "#"
-                self._update_bounds(nx, ny)
+                self.cells[(x, y)][d] = "#"
                 continue
 
-            # moved OR reached exit
-            self.map[(nx, ny)] = " "
-            self._update_bounds(nx, ny)
+            # moved or reached exit
+            self.cells[(x, y)][d] = " "
+            if (nx, ny) not in self.cells:
+                self.cells[(nx, ny)] = {}
+
+            self.cells[(nx, ny)][OPPOSITE[d]] = " "
 
             if response == "reached exit":
                 self.exit_pos = (nx, ny)
 
             self.explore(nx, ny)
-
-            # backtrack
             self._send(f"move {OPPOSITE[d]}")
 
-    def _build_grid(self) -> List[List[str]]:
-        width = self.max_x - self.min_x + 1
-        height = self.max_y - self.min_y + 1
+        self.fully_explored.add((x, y))
+
+    def build_grid(self):
+        width = (self.max_x - self.min_x + 1) * 2 + 1
+        height = (self.max_y - self.min_y + 1) * 2 + 1
 
         grid = [["#" for _ in range(width)] for _ in range(height)]
 
-        for (x, y), value in self.map.items():
-            grid[y - self.min_y][x - self.min_x] = value
+        def gx(x): return (x - self.min_x) * 2 + 1
+        def gy(y): return (y - self.min_y) * 2 + 1
 
-        # Start
-        grid[-self.min_y][-self.min_x] = "S"
+        for (x, y), walls in self.cells.items():
+            cx, cy = gx(x), gy(y)
+            grid[cy][cx] = " "
 
-        # Exit
+            for d, v in walls.items():
+                dx, dy = DIRS[d]
+                grid[cy + dy][cx + dx] = v
+
+        sx, sy = gx(0), gy(0)
+        grid[sy][sx] = "S"
+
         if self.exit_pos:
             ex, ey = self.exit_pos
-            grid[ey - self.min_y][ex - self.min_x] = "E"
+            grid[gy(ey)][gx(ex)] = "E"
 
         return grid
 
-    def save_map(self, path: str):
-        # add guaranteed outer walls BEFORE grid creation
-        for x in range(self.min_x - 1, self.max_x + 2):
-            self.map[(x, self.min_y - 1)] = "#"
-            self.map[(x, self.max_y + 1)] = "#"
-
-        for y in range(self.min_y - 1, self.max_y + 2):
-            self.map[(self.min_x - 1, y)] = "#"
-            self.map[(self.max_x + 1, y)] = "#"
-
-        self.min_x -= 1
-        self.max_x += 1
-        self.min_y -= 1
-        self.max_y += 1
-
-        grid = self._build_grid()
-
-        with open(path, "w") as f:
+    def save(self, maze_id: int):
+        grid = self.build_grid()
+        with open(f"/app/output/{maze_id}.txt", "w") as f:
             for row in grid:
                 f.write("".join(row) + "\n")
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 explorer.py <maze_id>")
-        sys.exit(1)
-
     maze_id = int(sys.argv[1])
-
     explorer = MazeExplorer(maze_id)
     explorer.explore(0, 0)
-    explorer.save_map(f"/app/output/{maze_id}.txt")
+    explorer.save(maze_id)
 
 
 if __name__ == "__main__":

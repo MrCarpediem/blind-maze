@@ -1,7 +1,7 @@
 version: "3.8"
-
 services:
   maze:
     build: .
     volumes:
       - .:/app
+    command: sh scripts/run.sh
