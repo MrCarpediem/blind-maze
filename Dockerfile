@@ -19,8 +19,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Make solution script executable
 RUN chmod +x solution.sh
 
-# Install TerminalBench for running the project
-RUN pip install --no-cache-dir terminal-bench-core==0.1.1
-
-# Default command - show usage
-CMD ["echo", "This is a TerminalBench project. Use: tb run --dataset terminal-bench-core==0.1.1 --task-id blind-maze-explorer-algorithm --agent nop --model dummy"]
+# Default command - display usage info
+CMD ["echo", "Blind Maze Explorer - Ready to run with TerminalBench or standalone"]

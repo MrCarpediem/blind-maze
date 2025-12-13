@@ -14,7 +14,7 @@ A Depth-First Search (DFS) based solution for the TerminalBench blind maze explo
 
 Install TerminalBench first:
 ```bash
-pip install terminal-bench-core==0.1.1
+pip install terminal-bench
 ```
 
 Then run:
@@ -28,20 +28,26 @@ tb run \
 
 ## How to run with Docker
 
-Build and run the Docker container:
+Start an interactive Docker shell:
 ```bash
-docker compose up --build
+docker compose up
 ```
 
-Or manually:
+Inside the container, you can:
+- Run TerminalBench: `tb run --dataset terminal-bench-core==0.1.1 --task-id blind-maze-explorer-algorithm --agent nop --model dummy`
+- Or run directly: `python explorer.py <maze_id>`
+
+To exit: `exit`
+
+Or run a one-shot command:
 ```bash
-docker build -t blind-maze-explorer .
-docker run -v $(pwd)/runs:/app/runs -v $(pwd)/output:/app/output blind-maze-explorer
+docker run -v $(pwd)/runs:/app/runs -v $(pwd)/output:/app/output blind-maze-explorer python explorer.py 1
 ```
 
 ## Project Structure
 
 - `explorer.py` - Main DFS-based maze explorer
 - `solution.sh` - Shell script for running multiple maze instances
-- `Dockerfile` - Docker configuration with TerminalBench
+- `Dockerfile` - Docker configuration
 - `docker-compose.yml` - Docker Compose orchestration
+
