@@ -23,9 +23,7 @@ class MazeExplorer:
         maze_game = "/app/maze_game.sh"
 
         if not os.path.exists(maze_game):
-            raise RuntimeError(
-                "maze_game.sh not found. This program must be run using `tb run`."
-            )
+            raise RuntimeError("Run this program using `tb run` only.")
 
         self.proc = subprocess.Popen(
             [maze_game, str(maze_id)],
@@ -71,6 +69,10 @@ class MazeExplorer:
                 self._update_bounds(nx, ny)
                 continue
 
+            # moved OR reached exit
+            self.map[(nx, ny)] = " "
+            self._update_bounds(nx, ny)
+
             if response == "reached exit":
                 self.exit_pos = (nx, ny)
 
@@ -88,9 +90,10 @@ class MazeExplorer:
         for (x, y), value in self.map.items():
             grid[y - self.min_y][x - self.min_x] = value
 
-        # Start position
+        # Start
         grid[-self.min_y][-self.min_x] = "S"
 
+        # Exit
         if self.exit_pos:
             ex, ey = self.exit_pos
             grid[ey - self.min_y][ex - self.min_x] = "E"
@@ -98,14 +101,19 @@ class MazeExplorer:
         return grid
 
     def save_map(self, path: str):
-        # enforce outer walls
+        # add guaranteed outer walls BEFORE grid creation
         for x in range(self.min_x - 1, self.max_x + 2):
-            self.map.setdefault((x, self.min_y - 1), "#")
-            self.map.setdefault((x, self.max_y + 1), "#")
+            self.map[(x, self.min_y - 1)] = "#"
+            self.map[(x, self.max_y + 1)] = "#"
 
         for y in range(self.min_y - 1, self.max_y + 2):
-            self.map.setdefault((self.min_x - 1, y), "#")
-            self.map.setdefault((self.max_x + 1, y), "#")
+            self.map[(self.min_x - 1, y)] = "#"
+            self.map[(self.max_x + 1, y)] = "#"
+
+        self.min_x -= 1
+        self.max_x += 1
+        self.min_y -= 1
+        self.max_y += 1
 
         grid = self._build_grid()
 
@@ -123,7 +131,7 @@ def main():
 
     explorer = MazeExplorer(maze_id)
     explorer.explore(0, 0)
-    explorer.save_map(f"output/{maze_id}.txt")
+    explorer.save_map(f"/app/output/{maze_id}.txt")
 
 
 if __name__ == "__main__":
