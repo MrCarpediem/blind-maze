@@ -21,3 +21,11 @@ done
 
 echo "=== OUTPUT FILES ==="
 ls -l /app/output
+
+# As a final fallback, copy the newest generated map to /app/maze_map.txt
+if ls /app/output/*.txt >/dev/null 2>&1; then
+  newest=$(ls -t /app/output/*.txt | head -n1)
+  cp "$newest" /app/maze_map.txt
+  cp "$newest" /app/output/maze_map.txt
+  echo "Final maze_map written from $newest"
+fi
