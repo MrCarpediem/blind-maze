@@ -1,0 +1,7 @@
+output/
+runs/
+*.log
+.pytest_cache/
+__pycache__/
+.DS_Store
+blind-maze-submission.zip
