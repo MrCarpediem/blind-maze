@@ -11,4 +11,5 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     working_dir: /app
-    command: /app/solution.sh
+    # Run TerminalBench task
+    command: bash -c "tb run --dataset terminal-bench-core==0.1.1 --task-id blind-maze-explorer-algorithm --agent nop --model dummy"
