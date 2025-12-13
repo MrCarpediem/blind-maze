@@ -19,9 +19,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Make solution script executable
 RUN chmod +x solution.sh
 
-# Copy mock game for local testing (use mock name if present)
-COPY maze_game_mock.sh ./maze_game.sh
-RUN chmod +x /app/maze_game.sh || true
+# The image no longer includes the local mock `maze_game_mock.sh`.
+# In the grader environment the real `maze_game.sh` will be provided.
 
 # Default command - display usage info
 CMD ["echo", "Blind Maze Explorer - Ready to run with TerminalBench or standalone"]
