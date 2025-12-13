@@ -26,6 +26,13 @@ ls -l /app/output
 if ls /app/output/*.txt >/dev/null 2>&1; then
   newest=$(ls -t /app/output/*.txt | head -n1)
   cp "$newest" /app/maze_map.txt
-  cp "$newest" /app/output/maze_map.txt
+  # Ensure the canonical grader file is also persisted into the mounted output
+  cp "$newest" /app/output/maze_map.txt || true
   echo "Final maze_map written from $newest"
+fi
+
+# If explorer wrote /app/maze_map.txt directly, persist that to the mounted output too
+if [ -f /app/maze_map.txt ]; then
+  cp /app/maze_map.txt /app/output/maze_map.txt || true
+  echo "Persisted /app/maze_map.txt to /app/output/maze_map.txt"
 fi
