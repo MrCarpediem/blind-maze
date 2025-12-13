@@ -1,12 +1,12 @@
 #!/bin/sh
 set -e
 
-mkdir -p output
+mkdir -p /app/output
 
-for i in 1 2 3 4 5 6 7 8 9 10
+for MAZE_ID in 1 2 3 4 5 6 7 8 9 10
 do
-  echo "Exploring maze $i"
-  python3 explorer.py $i
+  echo "Exploring maze $MAZE_ID"
+  python explorer.py $MAZE_ID
 done
 
-echo "All mazes explored successfully."
+echo "All mazes explored."
