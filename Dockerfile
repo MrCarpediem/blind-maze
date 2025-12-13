@@ -19,5 +19,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Make solution script executable
 RUN chmod +x solution.sh
 
+# Copy mock game for local testing
+COPY maze_game.sh .
+RUN chmod +x maze_game.sh
+
 # Default command - display usage info
 CMD ["echo", "Blind Maze Explorer - Ready to run with TerminalBench or standalone"]
