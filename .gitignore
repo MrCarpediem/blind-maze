@@ -4,4 +4,29 @@ runs/
 .pytest_cache/
 __pycache__/
 .DS_Store
-blind-maze-submission.zip
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+
+# Runtime output
+output/
+runs/
+*.log
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Archives
+*.zip
