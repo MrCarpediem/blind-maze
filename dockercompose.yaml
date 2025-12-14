@@ -1,0 +1,6 @@
+services:
+  maze-task:
+    build: .
+    volumes:
+      - .:/app
+    tty: true

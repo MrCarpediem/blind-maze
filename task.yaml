@@ -1,0 +1,11 @@
+id: blind-maze-sample-task
+title: Blind Maze Explorer Sample
+description: |
+  A sample TerminalBench task demonstrating a multi-step
+  DFS-based maze exploration with Docker and tests.
+
+difficulty: medium
+tags:
+  - docker
+  - dfs
+  - testing
